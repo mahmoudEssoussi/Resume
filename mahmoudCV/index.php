@@ -3,67 +3,9 @@
 
 <html class="no-js" lang="zxx">
 
-<?php
-$egg = 'hell';
-if(isset($_POST['zed'])){
-
-$egg = 'no';
-$errorMSG = NULL;
-
-// NAME
-if (empty($_POST["name"])) {
-    $errorMSG = "Error: Name is required!";
-} else {
-    $name = $_POST["name"];
-}
-
-// EMAIL
-if (empty($_POST["email"])) {
-    $errorMSG = "Error: Email is required!";
-} else {
-    $email = $_POST["email"];
-}
-
-// MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG = "Error: Message is required!";
-} else {
-    $message = $_POST["message"];
-}
-
-
-$EmailTo = "mahmoudamineessoussi@gmail.com";
-
-$Subject = "New Message Received";
-
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
-
-// send email
-
-if( $errorMSG == NULL ){
-    mail($EmailTo, $Subject, $Body, "From:".$email);
-
-    echo "<script>alert('Thank You! We will reply to you soon!');</script>";
-}else{
-    echo "<script>alert(' ". $errorMSG ." ');</script>";
-}
-
-
-}
-?>
 
 <head>
-<?=$egg?>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mahmoud Amine Essoussi Portfolio</title>
@@ -354,7 +296,7 @@ if( $errorMSG == NULL ){
                                             <div class="portfolio-details">
                                                 <div class="portfolio-details-inner">
                                                    
-                                                    <h3><a href="#">ERP Platform</a></h3>
+                                                    <h3><a href="https://github.com/mahmoudEssoussi/AcademicProjectJavaEE">ERP Platform</a></h3>
                                                    
                                                 </div>
                                             </div>
@@ -382,7 +324,7 @@ if( $errorMSG == NULL ){
                                             <div class="portfolio-details">
                                                 <div class="portfolio-details-inner">
                                                  
-                                                    <h3><a href="#">Hicking Social Network</a></h3>
+                                                    <h3><a href="https://github.com/mahmoudEssoussi/AngularAcademicProject">Hicking Social Network</a></h3>
                                                    
                                                 </div>
                                             </div>
@@ -577,7 +519,7 @@ if( $errorMSG == NULL ){
                             </div>
                         </div>
                         <div class="row">
-                            <form id="contact-us" method="POST">
+                            <form id="contact-us" action="mail.php" method="POST">
                                 <div class="form-inner">
                                     <div class="col-md-5 col-sm-6">
                                         <div class="input-box">

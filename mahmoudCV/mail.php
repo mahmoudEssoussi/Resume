@@ -1,7 +1,7 @@
 
-
 <?php
-if(isset($_POST['submit'])){
+
+if(isset($_POST['zed'])){
 
 
 $errorMSG = NULL;
@@ -21,10 +21,10 @@ if (empty($_POST["email"])) {
 }
 
 // MESSAGE
-if (empty($_POST["Comment"])) {
+if (empty($_POST["message"])) {
     $errorMSG = "Error: Message is required!";
 } else {
-    $message = $_POST["Comment"];
+    $message = $_POST["message"];
 }
 
 
@@ -39,9 +39,6 @@ $Body .= $name;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
-$Body .= "\n";
-$Body .= "Inquiry: ";
-$Body .= $inquiry;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;

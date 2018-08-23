@@ -531,7 +531,7 @@
                                     <div class="col-md-7 col-sm-6">
                                         <div class="message-box">
                                             <textarea name="message" cols="30" rows="2" placeholder="Project Description"></textarea>
-                                            <input  id="Comment"  class="button" type="submit"  name="zed" value="SEND MESSAGE">
+                                            <input  id="zed"  class="button" type="submit"  name="zed" value="SEND MESSAGE">
                                             <p class="contact-send-message"></p>
                                         </div>
                                     </div>

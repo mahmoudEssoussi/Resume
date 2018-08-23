@@ -518,26 +518,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <form id="contact-us" action="mail.php" method="POST">
-                                <div class="form-inner">
-                                    <div class="col-md-5 col-sm-6">
-                                        <div class="input-box">
-                                            <input  id="name" name="name" placeholder="Your Name" type="text">
-                                            <input  id="email" name="email" placeholder="Your Email" type="email">
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 col-sm-6">
-                                        <div class="message-box">
-                                            <textarea name="message" cols="30" rows="2" placeholder="Project Description"></textarea>
-                                            <input  id="zed"  class="button" type="submit"  name="zed" value="SEND MESSAGE">
-                                            <p class="contact-send-message"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                      
                     </div>
                 </div>
             </div>
